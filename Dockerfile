@@ -5,7 +5,8 @@ FROM pgvector/pgvector:pg17
 EXPOSE 5432
 
 # Set up a volume for persistent data
-VOLUME /var/lib/postgresql/data
+# Banned from Railway. Use Railway volumes instead. 
+# VOLUME /var/lib/postgresql/data
 
 # Pass environment variables
 ARG POSTGRES_PASSWORD POSTGRES_USER POSTGRES_DB
